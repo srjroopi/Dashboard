@@ -1,11 +1,12 @@
 import "./App.css";
-import theme from "./components/common/theme";
+import theme from "./common/styles/theme";
 import { ThemeProvider } from "styled-components";
+import Welcome from "./components/welcome/Welcome";
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <h1>Hi</h1>
+      <Welcome />
     </ThemeProvider>
   );
 };
